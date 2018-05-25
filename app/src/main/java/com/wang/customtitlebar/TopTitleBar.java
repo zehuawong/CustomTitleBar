@@ -11,4 +11,5 @@ public class TopTitleBar extends RelativeLayout{
     private TextView titleTextview;
 
 
+
 }
