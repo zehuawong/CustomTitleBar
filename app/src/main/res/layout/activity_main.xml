@@ -4,25 +4,61 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".MainActivity">
     <!--xmlns:app=…… res-auto表示自动查找,也可以指定包名-->
 
     <com.wang.customtitlebar.TopTitleBar
-        android:id="@+id/topTitileBar"
+        android:id="@+id/topEditBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
-        android:background="@color/limegreen"
-        app:leftBackground="@drawable/title_back"
+        android:layout_height="70dp"
+        android:background="@color/deepOrange"
+        app:rightButtonText="编辑"
+        app:buttonTextSize="12sp"
+        app:buttonTextColor="#FFF"
+
+        app:leftBackground="@drawable/bg_back_selector"
         app:rightBackground="@drawable/button_selector"
-        app:titleText="我的课程"
+        app:titleText="已加入课程"
         app:titleTextColor="#FFF"
-        app:titleTextSize="6sp"
+        app:titleTextSize="16sp"
         >
     </com.wang.customtitlebar.TopTitleBar>
 
+    <com.wang.customtitlebar.TopTitleBar
+        android:id="@+id/topChooseAllBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/deepOrange"
+        app:leftButtonText="取消"
+        app:rightButtonText="全选"
+        app:buttonTextSize="12sp"
+        app:buttonTextColor="#FFF"
+        app:leftBackground="@drawable/button_selector"
+        app:rightBackground="@drawable/button_selector"
+        app:titleText="已选x个项目"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="16sp"
+        android:visibility="gone"
+        >
+    </com.wang.customtitlebar.TopTitleBar>
 
-
-
-
+    <com.wang.customtitlebar.TopTitleBar
+        android:id="@+id/topCancelAllBar"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/deepOrange"
+        app:leftButtonText="取消"
+        app:rightButtonText="取消全选"
+        app:buttonTextSize="12sp"
+        app:buttonTextColor="#FFF"
+        app:leftBackground="@drawable/button_selector"
+        app:rightBackground="@drawable/button_selector"
+        app:titleText="已选x个项目"
+        app:titleTextColor="#FFF"
+        app:titleTextSize="16sp"
+        android:visibility="gone"
+        >
+    </com.wang.customtitlebar.TopTitleBar>
 
 </LinearLayout>

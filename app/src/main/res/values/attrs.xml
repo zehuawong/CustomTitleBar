@@ -3,7 +3,13 @@
 
     <declare-styleable name="TopTitleBar">
         <attr name="leftBackground" format="reference" />
+        <attr name="leftButtonText" format="string" />
+        <!--<attr name="leftButtonWidth" format="dimension" />-->
+        <!--<attr name="rightButtonWidth" format="dimension" />-->
         <attr name="rightBackground" format="reference" />
+        <attr name="rightButtonText" format="string" />
+        <attr name="buttonTextSize" format="dimension" />
+        <attr name="buttonTextColor" format="color" />
         <attr name="titleText" format="string" />
         <attr name="titleTextSize" format="dimension" />
         <attr name="titleTextColor" format="color" />
