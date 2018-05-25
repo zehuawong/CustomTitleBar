@@ -97,7 +97,7 @@ public class TopTitleBar extends RelativeLayout{
         this.listener = listener;
     }
 
-
+    //设置标题
     private void setTitleText(String titleText){
         titleTextView.setText(titleText);
     }

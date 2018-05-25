@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     tools:context=".MainActivity"
-    android:statusBarColor="#ffff00"
+     android:fitsSystemWindows="true"
     >
     <!--xmlns:app=…… res-auto表示自动查找,也可以指定包名-->
 
@@ -62,5 +62,6 @@
         android:visibility="gone"
         >
     </com.wang.customtitlebar.TopTitleBar>
+
 
 </LinearLayout>
